@@ -16,7 +16,7 @@
     gap: 30px;
     align-items: center;
     color: #fff;
-    font-family: "Montserrat", "Arial", serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     font-style: normal;
@@ -26,7 +26,7 @@
 .nav_button{
     border-radius: 100px;
     margin-left: auto;
-    font-family: "Montserrat", "Arial", serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 500;
     color: #2766AE;
@@ -38,13 +38,13 @@
     width: 1440px;
     height: 508px;
     margin: 0 auto;
-    background-image: url(../img/background1.png);
+    background-image: url(../img/background1.jpg);
     padding-top: 120px;
 }
 
 .headline_1{
     height: 49px;
-    font-family: "Montserrat", "Arial", serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-size: 40px;
     font-weight: 600;
     font-style: normal;
@@ -74,7 +74,7 @@
 }
 
 .main_4{
-    font-family: "Montserrat", "Arial", serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
@@ -84,7 +84,7 @@
 .main_4-text{
     color: #01A2CB;
     text-transform: uppercase;
-    font-family: "Montserrat", "Arial", serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 700;
     font-style: normal;
@@ -100,7 +100,7 @@
     gap: 10px;
 }
 
-.main_button{
+.main_button-1{
     display: flex;
     width: 320px;
     height: 56px;
@@ -110,7 +110,24 @@
     border-radius: 100px;
     background: linear-gradient(180deg, #00A4CC 0%, #2766AE 100%);
     color: #fff;
-    font-family: "Montserrat", "Arial", serif;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    gap: 4px;
+}
+
+
+.main_button-2{
+    display: flex;
+    width: 320px;
+    height: 56px;
+    padding: 18px 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: linear-gradient(95deg, #00A4CC 6.7%, #2766AE 91.35%);
+    color: #fff;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     gap: 4px;
@@ -126,7 +143,7 @@
 
 .headline_2{
     height: 49px;
-    font-family: "Montserrat", "Arial", serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-size: 40px;
     font-weight: 600;
     font-style: normal;
@@ -143,7 +160,7 @@
     display: flex;
     margin: 15px 463px 60px 464px;
     color: #fff;
-    font-family: "Montserrat", "Arial", serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     font-style: normal;
@@ -175,7 +192,7 @@
 .headline_3{
     width: 148px;
     margin: -2px 0px 0px -2px;
-    font-family: "Montserrat", "Arial", serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-size: 22px;
     font-weight: 600;
     font-style: normal;
@@ -189,7 +206,7 @@
 .block_text{
     width: 144px;
     color: #fff;
-    font-family: "Montserrat", "Arial", serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     font-style: normal;
@@ -208,7 +225,7 @@
     display: flex;
     justify-content: center;
     color: #fff;
-    font-family: "Montserrat", "Arial", serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 500;
     font-size: 16px;
     font-style: normal;
@@ -251,7 +268,7 @@ footer{
 
 .footer_text_1{
     color: #fff;
-    font-family: "Montserrat", "Arial", serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     font-style: normal;
@@ -263,7 +280,7 @@ footer{
 }
 
 h3{
-    font-family: "Montserrat", "Arial", serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 600;
     font-size: 22px;
     font-style: normal;
@@ -281,7 +298,7 @@ h3{
 }
 
 .menu{
-    font-family: "Montserrat", "Arial", serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     font-style: normal;
