@@ -55,10 +55,9 @@ body{
 }
 
 .section1{
-    width: 1440px;
     height: 508px;
     margin: 0 auto;
-    background-image: url(../img/background.jpg);
+    background: url(../img/background.jpg) 10% 50% / cover no-repeat;
     padding-top: 120px;
 }
 
