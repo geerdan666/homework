@@ -1,0 +1,29 @@
+.main{
+    background-color: #191919;
+}
+
+.main__text{
+    color: #fff;
+    font-size: 220%;
+}
+
+.main__rectangle{
+    position: fixed;
+    right: 50px;
+    left: 50vw;
+    bottom: 100px;
+    width: 50vw-50px;
+    background-color: #fff;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.main__circle{
+    position: fixed;
+    background-color: #ed2626;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    left: 55vw;
+    bottom: 150px;
+}
