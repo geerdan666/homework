@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>ФормОчки</title>
+  </head>
+  <body>
+    <form>
+      <fieldset class="fieldset">
+        <span class="title">Ваши личные данные</span>
+        <label class="field">
+          <span class="field-text">Ваше имя</span>
+          <input
+            class="input"
+            type="text"
+            placeholder="Имя"
+            name="name"
+            required
+          />
+        </label>
+        <label class="field">
+          <span class="field-text">Ваш возраст</span>
+          <input
+            class="input"
+            type="number"
+            placeholder="Возраст"
+            inputmode="numeric"
+            name="age"
+            required
+          />
+        </label>
+        <label class="field">
+          <span class="field-text">Ваш номер телефона</span>
+          <input
+            class="input"
+            type="tel"
+            placeholder="Номер телефона"
+            inputmode="tel"
+            name="phone"
+            required
+          />
+        </label>
+        <label class="field">
+          <span class="field-text">Ваша почта</span>
+          <input
+            class="input"
+            type="email"
+            placeholder="Почта"
+            inputmode="email"
+            name="email"
+            required
+          />
+        </label>
+        <label class="field">
+          <span class="field-text">Сообщение</span>
+          <textarea
+            class="input textarea"
+            name="message"
+            placeholder="Ваше сообщение"
+            required
+          ></textarea>
+        </label>
+        <label class="field">
+          <input type="checkbox" class="checkbox" required />
+          <span class="field-checkbox">Я принимаю правила</span>
+        </label>
+        <button class="button" type="submit">Отправить</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
