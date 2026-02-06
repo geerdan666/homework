@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Ubuntu, sans-serif;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.article-title {
+  text-transform: uppercase;
+  color: #2c332f;
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 48px;
+  max-width: 600px;
+  margin-top: 185px;
+  margin-bottom: 40px;
+}
+
+.article-text {
+  font-family: Ubuntu;
+  line-height: 130%;
+  font-weight: 400;
+  color: #535755;
+  margin: 0;
+}
+
+.article-text-first {
+  margin-bottom: 20px;
+}
+
+.article-text-second {
+  margin-bottom: 80px;
+}
+
+.article-image {
+  margin-bottom: 80px;
+}
+
+.article-subtitle {
+  font-size: 36px;
+  font-family: Oswald;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #2c332f;
+  margin-top: 0;
+}
+
+.article-subtitle-text {
+  max-width: 744px;
+  margin-bottom: 20px;
+}
+
+.article-list{
+    padding-left: 16px;
+    margin-bottom: 80px;
+    margin-top: 0;
+}
+
+.article-list-item {
+  font-family: Ubuntu;
+  font-weight: 400;
+  line-height: 130%;
+  color: #535755;
+}
+
+.article-video{
+    max-width: 1220px;
+    margin-bottom: 40px;
+}
+
+.article-text-invite{
+    margin-bottom: 120px;
+}
