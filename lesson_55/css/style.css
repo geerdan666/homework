@@ -6,19 +6,16 @@ html {
   font-family: sans-serif;
 }
 
-.header {
+.container {
+  padding: 20px;
+  margin: 0 auto;
   max-width: 1220px;
-  margin: 10px auto 0;
   border-bottom: #5d5a5a56 solid 2px;
-  padding-bottom: 20px;
-}
-
-.header-container {
-  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .logo {
