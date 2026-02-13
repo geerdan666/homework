@@ -1,9 +1,10 @@
-.container {
+.container_article{
   max-width: 1220px;
   margin: 0 auto;
 }
 
 .article-title {
+  max-width: 1220px;
   text-transform: uppercase;
   color: #2c332f;
   font-family: Oswald;
