@@ -1,0 +1,119 @@
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.header-content {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #a59ebe7f;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header-content-logo {
+  text-decoration: none;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  transition:
+    transform 0.2s,
+    filter 0.2s;
+}
+
+.header-content-logo-text {
+  display: block;
+  text-transform: uppercase;
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-weight: 400;
+  color: #2c332f;
+  max-width: 84px;
+  line-height: 22px;
+}
+
+.logo-text-1 {
+  position: relative;
+}
+
+.logo-text-1::after {
+  content: "";
+  background: url(../images/logo.svg) no-repeat center / contain;
+  height: 16px;
+  width: 48px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.header-content-logo:hover {
+  transform: translateY(-2px);
+}
+
+.header-content-logo:hover .header-content-logo-text,
+.header-content-logo:focus-visible .header-content-logo-text {
+  background: linear-gradient(135deg, #49a9ff, #fc7cd9);
+  background-clip: text;
+  color: transparent;
+}
+
+.header-content-phone {
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header-content-phone-text {
+  text-transform: uppercase;
+  font-family: Ubuntu;
+  letter-spacing: 0.04em;
+  font-size: 14px;
+  font-weight: 300;
+  color: #858e8a;
+}
+
+.header-content-phone-number {
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2c332f;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.header-content-phone-number::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(135deg, #49a9ff, #fc7cd9);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s;
+}
+
+.header-content-phone-number:hover,
+.header-content-phone-number:focus-visible {
+  background: linear-gradient(135deg, #49a9ff, #fc7cd9);
+  background-clip: text;
+  color: transparent;
+}
+
+.header-content-phone-number:hover::after {
+  transform: scaleX(1);
+}
+
+.header-content-phone-number:focus-visible,
+.header-content-logo:focus-visible {
+  outline: 2px solid rgba(252, 124, 217, 0.45);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
