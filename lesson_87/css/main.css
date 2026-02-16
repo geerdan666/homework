@@ -1,0 +1,339 @@
+.container {
+  padding: 0 16px;
+}
+
+.header-content {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #a59ebe7f;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header-content-logo {
+  text-decoration: none;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  transition:
+    transform 0.2s,
+    filter 0.2s;
+}
+
+.header-content-logo-text {
+  display: block;
+  text-transform: uppercase;
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-weight: 400;
+  color: #2c332f;
+  max-width: 84px;
+  line-height: 22px;
+}
+
+.logo-text-1 {
+  position: relative;
+}
+
+.logo-text-1::after {
+  content: "";
+  background: url(../images/logo.svg) no-repeat center / contain;
+  height: 16px;
+  width: 48px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.header-content-logo:hover {
+  transform: translateY(-2px);
+}
+
+.header-content-logo:hover .header-content-logo-text,
+.header-content-logo:focus-visible .header-content-logo-text {
+  background: linear-gradient(135deg, #49a9ff, #fc7cd9);
+  background-clip: text;
+  color: transparent;
+}
+
+.header-content-phone {
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header-content-phone-text {
+  text-transform: uppercase;
+  font-family: Ubuntu;
+  letter-spacing: 0.04em;
+  font-size: 14px;
+  font-weight: 300;
+  color: #858e8a;
+}
+
+.header-content-phone-number {
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2c332f;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.header-content-phone-number::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(135deg, #49a9ff, #fc7cd9);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s;
+}
+
+.header-content-phone-number:hover,
+.header-content-phone-number:focus-visible {
+  background: linear-gradient(135deg, #49a9ff, #fc7cd9);
+  background-clip: text;
+  color: transparent;
+}
+
+.header-content-phone-number:hover::after {
+  transform: scaleX(1);
+}
+
+.header-content-phone-number:focus-visible,
+.header-content-logo:focus-visible {
+  outline: 2px solid rgba(252, 124, 217, 0.45);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/********************** last-news *********************/
+
+.last-news {
+  padding: 0 15px;
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+.last-news-container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.last-news-title {
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #2c332f;
+  margin-bottom: 40px;
+}
+
+.article-container {
+  display: flex;
+  gap: 28px;
+}
+
+.last-news-article {
+  display: flex;
+  flex-direction: column;
+  max-width: 284px;
+  border: 1px solid #d3cbd9;
+}
+
+.last-news-article footer {
+  margin-top: auto;
+}
+
+.article-image {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.last-news-article-data {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-family: Ubuntu;
+  font-weight: 300;
+  color: #858e8a;
+  letter-spacing: 0.04em;
+  padding: 0 20px;
+}
+
+.last-news-article-title {
+  font-family: Ubuntu;
+  font-weight: 400;
+  line-height: 130%;
+  color: #2c332f;
+  margin-bottom: 12px;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+.article-link {
+  display: inline-block;
+  font-family: Ubuntu;
+  font-weight: 400;
+  line-height: 130%;
+  color: #3596ed;
+  text-decoration: none;
+  margin: 0 0 20px 20px;
+  padding-right: 20px;
+  position: relative;
+
+  border-radius: 8px;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+}
+
+.article-link::after {
+  content: "";
+  background: url(../images/arrow.svg) no-repeat;
+  position: absolute;
+  width: 22px;
+  height: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -8px;
+
+  transition: transform 0.2s;
+}
+
+.article-link::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  bottom: -6px;
+  left: -10px;
+  right: -18px;
+  background-color: rgba(53, 150, 237, 0.08);
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: -1;
+}
+
+.article-link:hover {
+  transform: translateY(-1px);
+}
+
+.article-link:hover::before {
+  opacity: 1;
+}
+
+.article-link:hover::after {
+  transform: translateY(-50%) translateX(2px);
+}
+
+.article-link:focus-visible {
+  outline: 2px solid rgba(252, 124, 217, 0.55);
+  outline-offset: 10px;
+}
+
+/******************* faq ******************/
+
+.faq {
+  margin-bottom: 140px;
+  padding: 0 15px;
+}
+
+.faq-container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.faq-title {
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  margin-bottom: 40px;
+}
+
+.faq-info {
+  display: flex;
+  gap: 28px;
+  position: relative;
+}
+
+.faq-info::after {
+  content: "";
+  position: absolute;
+  background: url(../images/decor_long.svg) repeat-x;
+  height: 48px;
+  right: 100%;
+  width: 100vw;
+  top: 120px;
+  z-index: -1;
+}
+
+.faq-info-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+details {
+  border-top: solid 1px #d3cbd9;
+  border-bottom: solid 1px #d3cbd9;
+}
+
+.accordion-question {
+  font-family: Oswald;
+  font-weight: 500;
+  line-height: 115%;
+  font-size: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  color: #2c332f;
+  list-style: none;
+  padding: 20px;
+}
+
+.accordion-question::after {
+  display: inline-block;
+  content: "";
+  background: url(../images/arrow-faq-down.svg) no-repeat center / cover;
+  height: 22px;
+  width: 17px;
+}
+
+details[open] > .accordion-question::after {
+  background: url(../images/arrow-faq-up.svg) no-repeat center / cover;
+}
+
+.accordion-question::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-text {
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+  padding: 0 20px 20px;
+}
+
+.accordion-question:focus-visible {
+  outline: 2px solid rgba(252, 124, 217, 0.55);
+}
