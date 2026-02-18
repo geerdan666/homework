@@ -1,0 +1,130 @@
+.footer{
+    margin-top: auto;
+}
+
+.footer-container {
+  width: 100%;
+  background: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(rgba(73, 169, 255, 0.2)),
+    to(rgba(252, 124, 217, 0.2))
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(73, 169, 255, 0.2) 0%,
+    rgba(252, 124, 217, 0.2) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(73, 169, 255, 0.2) 0%,
+    rgba(252, 124, 217, 0.2) 100%
+  );
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-logo {
+  margin-top: 60px;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  border-bottom: 1px solid #d3cbd9;
+  padding: 0 16px 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: clamp(16px, 4vw, 60px);
+     -moz-column-gap: clamp(16px, 4vw, 60px);
+          column-gap: clamp(16px, 4vw, 60px);
+  row-gap: clamp(12px, 2vw, 18px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-link {
+  text-decoration: none;
+  font-family: Ubuntu;
+  font-weight: 400;
+  color: #535755;
+  line-height: 130%;
+  padding: 6px 0;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.item-link:hover,
+.item-link:focus-visible {
+  background: -o-linear-gradient(315deg, #49a9ff, #fc7cd9);
+  background: linear-gradient(135deg, #49a9ff, #fc7cd9);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.item-link:focus-visible {
+  outline: 2px solid rgba(252, 124, 217, 0.45);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.footer-copyright {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: #858e8a;
+  position: relative;
+}
+
+.footer-copyright::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../images/copyright.svg) no-repeat center / contain;
+  left: -20px;
+}
+
+@media (width <= 768px) {
+  .footer-nav-list{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (width <= 576px) {
+  .footer-logo{
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,68 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  min-width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (width <= 992px) {
+  .header-content,
+  .hero-container,
+  .faq-container,
+  .last-news-container,
+  .container_article,
+  .article-title {
+    max-width: 768px;
+  }
+}
+
+@media (width <= 768px) {
+  .header-content,
+  .hero-container,
+  .faq-container,
+  .last-news-container,
+  .container_article,
+  .article-title {
+    max-width: 576px;
+  }
+}

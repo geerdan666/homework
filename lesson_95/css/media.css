@@ -1,0 +1,250 @@
+@media (width <= 1440px) {
+  .hero-images img {
+    width: 50%;
+  }
+}
+
+@media (width <= 992px) {
+  .hero {
+    margin-top: 30px;
+  }
+
+  .hero-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .info-link {
+    margin-bottom: 20px;
+  }
+
+  .info-text {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    max-width: none;
+  }
+
+  .article-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .last-news {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .last-news-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .last-news-article {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    min-width: 350px;
+  }
+
+  .faq {
+    margin-bottom: 90px;
+  }
+
+  .faq-title {
+    text-align: center;
+  }
+
+  .faq-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .faq-info::after {
+    display: none;
+  }
+
+  .article-title {
+    margin-top: 40px;
+  }
+
+  .article-text-second {
+    margin-bottom: 50px;
+  }
+
+  .article-image-container {
+    margin-bottom: 30px;
+  }
+
+  .article-list {
+    margin-bottom: 40px;
+  }
+
+  .article-text-invite {
+    margin-bottom: 40px;
+  }
+}
+
+@media (width <= 768px) {
+  .info-title {
+    font-size: 50px;
+  }
+
+  .last-news-article {
+    min-width: 400px;
+  }
+
+  .article-title {
+    font-size: 44px;
+  }
+
+  .article-play-button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .play-button-triangle {
+    width: 15px;
+  }
+}
+
+@media (width <= 576px) {
+  .info-title {
+    font-size: 44px;
+  }
+
+  .hero-images-badge {
+    max-width: 130px;
+    max-height: 60px;
+    padding: 5px;
+    top: 25px;
+    line-height: 120%;
+  }
+
+  .hero::after {
+    display: none;
+  }
+
+  .last-news {
+    margin: 40px 0;
+  }
+
+  .last-news-article {
+    min-width: 300px;
+  }
+
+  .last-news-title {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .faq {
+    margin-bottom: 60px;
+  }
+
+  .faq-title {
+    font-size: 36px;
+  }
+
+  .article-title {
+    font-size: 36px;
+  }
+
+  .article-subtitle {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .image-decor-left::after,
+  .image-decor-right::after {
+    display: none;
+  }
+
+  .play-button-triangle {
+    -webkit-transform: translateX(1px);
+        -ms-transform: translateX(1px);
+            transform: translateX(1px);
+  }
+}
+
+@media (width <= 375px) {
+  .info-title {
+    font-size: 36px;
+  }
+
+  .hero-images-badge {
+    max-width: 95px;
+    max-height: 62px;
+    padding: 2px;
+    top: 15px;
+    line-height: 120%;
+  }
+
+  .header-content-phone-text {
+    display: none;
+  }
+
+  .header-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 0;
+  }
+
+  .last-news {
+    margin: 40px 0;
+  }
+
+  .last-news-article {
+    min-width: 300px;
+  }
+
+  .last-news-title {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .faq {
+    margin-bottom: 40px;
+  }
+
+  .faq-title {
+    font-size: 30px;
+  }
+
+  .article-title {
+    font-size: 28px;
+  }
+
+  .article-subtitle {
+    font-size: 24px;
+  }
+
+    .article-play-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .play-button-triangle {
+    width: 13px;
+    -webkit-transform: translateX(2px) translateY(1px);
+        -ms-transform: translateX(2px) translateY(1px);
+            transform: translateX(2px) translateY(1px);
+  }
+}
