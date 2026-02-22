@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  min-width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+a[href],
+button,
+summary {
+  cursor: pointer;
+}
+
+@media (width <= 992px) {
+  .header__content,
+  .hero__container,
+  .faq__container,
+  .last-news__container,
+  .main__container-article,
+  .main__title {
+    max-width: 768px;
+  }
+}
+
+@media (width <= 768px) {
+  .header__content,
+  .hero__container,
+  .faq__container,
+  .last-news__container,
+  .main__container-article,
+  .main__title {
+    max-width: 576px;
+  }
+}

@@ -1,0 +1,161 @@
+.main__container-article {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.main__new-branch {
+  padding: 0 15px;
+  /* overflow-x: clip; */
+}
+
+.main__title {
+  max-width: 1220px;
+  text-transform: uppercase;
+  color: #2c332f;
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 48px;
+  max-width: 600px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.main__text {
+  font-family: Ubuntu;
+  line-height: 130%;
+  font-weight: 400;
+  color: #535755;
+  margin: 0;
+}
+
+.main__text--first {
+  margin-bottom: 20px;
+}
+
+.main__text--second {
+  margin-bottom: 80px;
+}
+
+.main__image-container {
+  position: relative;
+}
+
+.main__image-container--decor-left::after {
+  content: "";
+  position: absolute;
+  background: url(../images/decor_long.svg) repeat-x;
+  width: 100vw;
+  height: 48px;
+  top: 100px;
+  right: 100%;
+  z-index: -1;
+}
+
+.main__image-container--first {
+  margin-bottom: 80px;
+}
+
+.main__group-lessons {
+  padding: 0 15px;
+}
+
+.main__branch-review {
+  padding: 0 15px;
+  /* overflow-x: clip; */
+}
+
+.main__subtitle {
+  font-size: 36px;
+  font-family: Oswald;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #2c332f;
+  margin-top: 0;
+}
+
+.main__subtitle-text {
+  max-width: 744px;
+  margin-bottom: 20px;
+}
+
+.main__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 80px;
+  position: relative;
+}
+
+.main__item::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #3596ed;
+}
+
+.main__item {
+  font-family: Ubuntu;
+  font-weight: 400;
+  line-height: 130%;
+  color: #535755;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 8px;
+}
+
+.main__image-container--second {
+  margin-bottom: 40px;
+}
+
+.main__image-container--decor-right::after {
+  content: "";
+  position: absolute;
+  background: url(../images/decor_long.svg) repeat-x;
+  width: 50vw;
+  height: 48px;
+  bottom: 136px;
+  left: 50%;
+  z-index: -1;
+}
+
+.main__play-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #3596ed;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main__play-button-triangle {
+  -webkit-transform: translateX(2px);
+  -ms-transform: translateX(2px);
+  transform: translateX(2px);
+}
+
+.main__text-invite {
+  margin-bottom: 120px;
+}
