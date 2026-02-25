@@ -2,7 +2,9 @@
   font-family: var(--font-family), sans-serif;
   font-weight: 400;
   color: var(--main-color);
-  
+  min-width: 375px; 
+
+  /* for test */
   height: 400vh;
 }
 
@@ -16,6 +18,5 @@
 
 .container{
     width: min(var(--container-width), 100% - var(--container-padding) * 2);
-    margin-inline: auto;
-    min-width: 375px;  
+    margin-inline: auto; 
 }
