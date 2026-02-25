@@ -1,0 +1,21 @@
+.html {
+  font-family: var(--font-family), sans-serif;
+  font-weight: 400;
+  color: var(--main-color);
+  
+  height: 400vh;
+}
+
+.html__body{
+    background-color: var(--bg-color);
+}
+
+.html__body--no-scroll{
+  overflow-y: hidden;
+}
+
+.container{
+    width: min(var(--container-width), 100% - var(--container-padding) * 2);
+    margin-inline: auto;
+    min-width: 375px;  
+}

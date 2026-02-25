@@ -1,0 +1,124 @@
+<!doctype html>
+<html class="html" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/base/normalize.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" href="./icon/nike-favicon.svg" type="image/svg+xml" />
+    <script defer src="./js/index.js" type="module"></script>
+    <title>Nike air mag</title>
+  </head>
+  <body class="html__body">
+    <header class="header header--fixed">
+      <div class="container header__container">
+        <div class="header__part header__part--left">
+          <a href="#" class="logo header__logo-link">
+            <img
+              src="./icon/nike-logo.svg"
+              alt="Логотип Nike"
+              class="logo__img"
+            />
+          </a>
+          <nav class="nav header__nav " id="header__nav" aria-label="Главное меню">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link" lang="en">Air Mag</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Размеры</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Характеристики</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Другие ТОП модели</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__part header__part--right">
+          <div class="header__order">
+            <a href="#" class="header__order-link">Сделать заказ</a>
+          </div>
+          <div class="header__icons">
+            <button class="header__search" title="Поиск" aria-label="Поиск">
+              <svg
+                class="header__search-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 21L16.7 16.7M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button class="header__cart" title="Корзина" aria-label="Корзина">
+              <svg
+                class="header__cart-icon"
+                width="22"
+                height="21"
+                viewBox="0 0 22 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.5 0.5H2.5L5.16 12.92C5.25758 13.3749 5.51067 13.7815 5.87571 14.0699C6.24075 14.3582 6.69491 14.5103 7.16 14.5H16.94C17.3952 14.4993 17.8365 14.3433 18.191 14.0578C18.5456 13.7724 18.7921 13.3745 18.89 12.93L20.54 5.5H3.57M7.45 19.45C7.45 20.0023 7.00228 20.45 6.45 20.45C5.89772 20.45 5.45 20.0023 5.45 19.45C5.45 18.8977 5.89772 18.45 6.45 18.45C7.00228 18.45 7.45 18.8977 7.45 19.45ZM18.45 19.45C18.45 20.0023 18.0023 20.45 17.45 20.45C16.8977 20.45 16.45 20.0023 16.45 19.45C16.45 18.8977 16.8977 18.45 17.45 18.45C18.0023 18.45 18.45 18.8977 18.45 19.45Z"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button
+              class="header__burger burger"
+              aria-expanded="false"
+              aria-controls="header__nav"
+              title="Открыть меню"
+              aria-label="Открыть меню"
+            >
+              <svg
+              class="burger__icon-menu"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 12H9M21 18H7M21 6H3"
+                  stroke="#FFEA00"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg
+                class="burger__icon-cross burger--close"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 6L6 18M6 6L18 18"
+                  stroke="#C9C69B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
