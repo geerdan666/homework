@@ -1,0 +1,26 @@
+:root {
+  --font-family: "Montserrat", sans-serif;
+
+  /* colors */
+  --main-color: #fff;
+  --accent-color: #ffea00;
+  --bg-color: #2a2a29;
+  --secondary-color: #c9c69b;
+  --disable-color: #5d5d56;
+  --shadow-color: #181817;
+
+  --container-width: 1240px;
+  --container-padding: 15px;
+
+    /* transform */
+  --transition-delay: 0.2s;
+  --scale-value: 0.96;
+  --translate-y: 1px;
+
+
+  /* layers */
+  --layer-minus-1: -1;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+}
