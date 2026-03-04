@@ -1,0 +1,13 @@
+@import "./base/normalize.css";
+@import "./base/fonts.css";
+@import "./base/vars.css";
+@import "./base/global.css";
+
+/* blocks */
+@import "./blocks/header.css";
+@import "./blocks/nav.css";
+@import "./blocks/hero.css";
+@import "./blocks/promo.css";
+@import "./blocks/product.css";
+@import "./blocks/characteristic.css";
+@import "./blocks/other-models.css";
