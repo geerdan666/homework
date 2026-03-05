@@ -1,0 +1,75 @@
+.modal {
+  --transition-delay: 0.2s;
+
+  position: fixed;
+  inset: 0;
+  z-index: var(--layer-4);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 30, 30, 0.9)), color-stop(1810%, #000));
+  background: -o-linear-gradient(rgba(30, 30, 30, 0.9), #000 1810%);
+  background: linear-gradient(rgba(30, 30, 30, 0.9), #000 1810%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition:
+    opacity var(--transition-delay),
+    visibility var(--transition-delay);
+  -o-transition:
+    opacity var(--transition-delay),
+    visibility var(--transition-delay);
+  transition:
+    opacity var(--transition-delay),
+    visibility var(--transition-delay);
+}
+
+.modal--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.modal__window {
+  position: relative;
+  display: none;
+  margin-block: 50px;
+  border-radius: 12px;
+  vertical-align: middle;
+  background-color: var(--bg-color);
+  -webkit-box-shadow: 0 0 20px var(--shadow-color);
+          box-shadow: 0 0 20px var(--shadow-color);
+}
+
+@media (width > 576px) {
+  .modal__window {
+    padding: 100px 50px;
+  }
+}
+
+@media (width <= 576px) {
+  .modal__window {
+    padding: 80px 30px;
+    width: 90%;
+  }
+}
+
+.modal__window--open {
+  display: inline-block;
+}
+
+.modal__close {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 15px;
+  right: 20px;
+}
