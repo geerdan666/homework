@@ -1,0 +1,40 @@
+:root {
+  /* fonts */
+  --font-family: "Onest", sans-serif;
+  --second-family: "Integral CF", sans-serif;
+  --second-family-cyrillic: "Exo2", sans-serif;
+  --third-family: "Inter", sans-serif;
+
+  /* layout */
+  --container-width: 1240px;
+  --container-padding-x: 16px;
+
+  /* opacity */
+  --opacity-hover: 0.9;
+  --opacity-text: 0.6;
+  --opacity-translucent: 0.4;
+  --opacity-light: 0.1;
+
+  /* color */
+  --color-primary: #000;
+  --color-additional: #fff;
+  --color-bg-form: #f2f2f2;
+  --color-discount-bg: #000;
+  --color-bg-hero: #F2F0F1;
+  --color-bg-style: #f0f0f0;
+  --color-rgba: 0, 0, 0;
+  --color-bg-additional: #000;
+  --color-price-discount: #f33;
+  --color-bg-discount-rgba: 255, 51, 51;
+
+  /* transition */
+  --transition-duration: 0.3s;
+
+  /* transform */
+  --translate-y-xs: 1px;
+  --scale-active: 0.96;
+
+  /* layers */
+  --layer-1: 1;
+  --layer-2: 2;
+}

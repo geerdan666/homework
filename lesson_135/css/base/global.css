@@ -1,0 +1,33 @@
+.html {
+  min-width: 375px;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+.container {
+  width: min(var(--container-width), 100% - var(--container-padding-x) * 2);
+  margin-inline: auto;
+}
+
+.body--no-scroll{
+  overflow: hidden;
+}
+
+/* focus-visible */
+a:focus-visible,
+button:focus-visible,
+input:focus {
+  outline: 1px solid currentColor;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+img{
+  object-fit: cover;
+}
