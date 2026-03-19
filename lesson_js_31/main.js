@@ -53,6 +53,9 @@ function getTimeOfDay(dayTime) {
 // Если чётного числа в этом диапазоне нет, функция должна вернуть "Чётных чисел нет".
 
 function findFirstEven(start, end) {
+  if (start > end){
+    return "Неверный диапазон"
+  }
   for (i = start; i <= end; i++) {
     if (i % 2 === 0) {
       return i;
