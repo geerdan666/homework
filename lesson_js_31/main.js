@@ -31,7 +31,7 @@ function checkAccess(login, password) {
 // Если введённое значение не попадает в этот диапазон, возвращайте `"Некорректное время"`.
 
 function getTimeOfDay(dayTime) {
-  if (dayTime > 23 || dayTime < 0) {
+  if (dayTime > 23 || dayTime < 0 || !Number.isInteger(Number(dayTime))) {
     return "Некорректное время";
   }
 
